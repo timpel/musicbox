@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF 8">
+		<title>Looper</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script src="http://code.jquery.com/jquery-2.0.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="howler.js"></script>
+		<script type="text/javascript" src="sounds.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		</head>
+	<body>
+		<div align="center" id="button_row">
+			<div id="keychange" class="button"></div>
+			<div id="loop" class="button"></div>
+			<div id="clear" class="button"></div>
+			<div id="playstop" class="stopped button"></div>
+			<div id="addtrack" class="button"></div>
+			<div id="deletemeasure" class="button"></div>
+			<div id="addmeasure" class="button"></div>
+			<div id="tempo_button" class="button">
+				<input type="text" id="tempo">
+			</div>
+		</div>
+		<div id="inst_menu">
+			<div class="inst_button bass_ico"></div>
+			<div class="inst_button violin_ico"></div>
+			<div class="inst_button piano_ico"></div>
+			<div class="inst_button synth_ico"></div>
+			<div class="inst_button drums_ico"></div>
+		</div>
+		<div class="track_container">
+			<div class="track bass">
+				<div class='track_btns'>
+					<div id='inst' class="trackbutton"></div>
+					<div id='deletetrack' class="trackbutton"></div>
+				</div>
+				<div class="col">
+					<div class="c 5 note">C</div>
+					<div class="b 4 note">B</div>
+					<div class="as 4 note">B<sup>b</sup></div>
+					<div class="a 4 note">A</div>
+					<div class="gs 4 note">A<sup>b</sup></div>
+					<div class="g 4 note">G</div>
+					<div class="fs 4 note">F<sup>#</sup></div>
+					<div class="f 4 note">F</div>
+					<div class="e 4 note">E</div>
+					<div class="ds 4 note">E<sup>b</sup></div>
+					<div class="d 4 note">D</div>
+					<div class="cs 4 note">D<sup>b</sup></div>
+					<div class="c 4 note">C</div>
+					<div class="b 3 note">B</div>
+					<div class="as 3 note">B<sup>b</sup></div>
+					<div class="a 3 note">A</div>
+					<div class="gs 3 note">A<sup>b</sup></div>
+					<div class="g 3 note">G</div>
+					<div class="fs 3 note">F<sup>#</sup></div>
+					<div class="f 3 note">F</div>
+					<div class="e 3 note">E</div>
+					<div class="ds 3 note">E<sup>b</sup></div>
+					<div class="d 3 note">D</div>
+					<div class="cs 3 note">D<sup>b</sup></div>
+					<div class="c 3 note">C</div>
+				</div>
+			</div>
+		</div>
+		<div id="key_menu">
+			<div class="key_choice c"><p align="center">C Major</p></div>
+			<div class="key_choice cs"><p align="center">D flat Major</p></div>
+			<div class="key_choice d"><p align="center">D Major</p></div>
+			<div class="key_choice ds"><p align="center">E flat Major</p></div>
+			<div class="key_choice e"><p align="center">E Major</p></div>
+			<div class="key_choice f"><p align="center">F Major</p></div>
+			<div class="key_choice fs"><p align="center">F sharp Major</p></div>
+			<div class="key_choice g"><p align="center">G Major</p></div>
+			<div class="key_choice gs"><p align="center">A flat Major</p></div>
+			<div class="key_choice a"><p align="center">A Major</p></div>
+			<div class="key_choice as"><p align="center">B flat Major</p></div>
+			<div class="key_choice b"><p align="center">B Major</p></div>
+			<div class="key_choice ds"><p align="center">C Minor</p></div>
+			<div class="key_choice e"><p align="center">D flat Minor</p></div>
+			<div class="key_choice f"><p align="center">D Minor</p></div>
+			<div class="key_choice fs"><p align="center">E flat Minor</p></div>
+			<div class="key_choice g"><p align="center">E Minor</p></div>
+			<div class="key_choice gs"><p align="center">F Minor</p></div>
+			<div class="key_choice a"><p align="center">F sharp Minor</p></div>
+			<div class="key_choice as"><p align="center">G Minor</p></div>
+			<div class="key_choice b"><p align="center">A flat Minor</p></div>
+			<div class="key_choice c"><p align="center">A Minor</p></div>
+			<div class="key_choice cs"><p align="center">B flat Minor</p></div>
+			<div class="key_choice d"><p align="center">B Minor</p></div>
+			<div class="key_choice none"><p align="center">None</p></div>
+		</div>
+	</body>
+</html>
